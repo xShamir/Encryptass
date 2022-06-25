@@ -14,6 +14,13 @@ const randomFunc = {
 	symbol: getRandomSymbol
 }
 
+lengthEl.addEventListener("input", () => {
+    if(lengthEl.value > 30)
+    {
+        lengthEl.value = 30;
+    }
+});
+
 clipboard.addEventListener('click', () => {
 	const textarea = document.createElement('textarea');
 	const password = resultEl.innerText;
@@ -28,7 +35,7 @@ clipboard.addEventListener('click', () => {
 });
 
 generate.addEventListener('click', () => {
-	const length = +lengthEl.value;
+    const length = lengthEl.value;
 	const hasLower = lowercaseEl.checked;
 	const hasUpper = uppercaseEl.checked;
 	const hasNumber = numbersEl.checked;
@@ -73,25 +80,6 @@ function getRandomNumber() {
 }
 
 function getRandomSymbol() {
-	const symbols = '!@#$%^&*(){}[]=<>/,.'
+	const symbols = '!@#$%^&*(){}[]=<>/\,.`~;:?'
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
-
-
-
-
-
-
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
-
-floating_btn.addEventListener('click', () => {
-	social_panel_container.classList.toggle('visible')
-});
-
-close_btn.addEventListener('click', () => {
-	social_panel_container.classList.remove('visible')
-});
