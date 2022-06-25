@@ -71,6 +71,7 @@ input[type=checkbox] {
 	font-size: 16px;
 	padding: 8px 12px;
 	background-color: #3B3B98;
+	transition: 0.3s;
 }
 
 .btn-large {
@@ -78,11 +79,24 @@ input[type=checkbox] {
 	width: 100%;
 }
 
+.btn:hover {
+	background-color: #292997;
+}
+
+.btn:active {
+	transform: scale(0.85);
+	background-color: rgb(36, 36, 204);
+}
+
 .setting {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 15px 0;
+}
+
+.setting input {
+	background-color: blue;
 }
 
 @media screen and (max-width: 400px) {
