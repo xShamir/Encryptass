@@ -15,10 +15,16 @@ const randomFunc = {
 }
 
 lengthEl.addEventListener("input", () => {
-    if(lengthEl.value > 20)
+	const length = lengthEl.value;
+    if(length > 20)
     {
         lengthEl.value = 20;
     }
+
+	if(!length || length == 0)
+	{
+		length.value = 15;
+	}
 });
 
 clipboard.addEventListener('click', () => {
