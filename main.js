@@ -23,7 +23,7 @@ lengthEl.addEventListener("input", () => {
 
 	if(!length || length == 0)
 	{
-		length.value = 15;
+		lengthEl.value = 15;
 	}
 });
 
