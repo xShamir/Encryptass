@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -116,31 +115,6 @@ input[type=checkbox] {
 	}
 }
 
-.floating-btn {
-	border-radius: 26.5px;
-	background-color: #001F61;
-	border: 1px solid #001F61;
-	box-shadow: 0 16px 22px -17px #03153B;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 12px 20px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 999;
-}
-
-.floating-btn:hover {
-	background-color: #ffffff;
-	color: #001F61;
-}
-
-.floating-btn:focus {
-	outline: none;
-}
-
 .floating-text {
 	background-color: #001F61;
 	border-radius: 10px 10px 0 0;
@@ -156,7 +130,7 @@ input[type=checkbox] {
 }
 
 .floating-text a {
-	color: #FF7500;
+	color: red;
 	text-decoration: none;
 }
 
