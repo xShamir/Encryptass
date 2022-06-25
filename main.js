@@ -15,9 +15,9 @@ const randomFunc = {
 }
 
 lengthEl.addEventListener("input", () => {
-    if(lengthEl.value > 30)
+    if(lengthEl.value > 20)
     {
-        lengthEl.value = 30;
+        lengthEl.value = 20;
     }
 });
 
