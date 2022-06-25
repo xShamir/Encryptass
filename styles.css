@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -95,8 +96,18 @@ input[type=checkbox] {
 	margin: 15px 0;
 }
 
-.setting input {
+.setting input[type=number] {
 	border-radius: 4px;
+	border: 2px solid rgb(55, 207, 207);
+	background-color: #262674;
+	color: white;
+	outline: none;
+	transition: 0.3s;
+}
+
+.setting input[type=number]:focus {
+	transform: scale(1.23);
+	background-color: #25198d;
 }
 
 @media screen and (max-width: 400px) {
