@@ -20,11 +20,6 @@ lengthEl.addEventListener("input", () => {
     {
         lengthEl.value = 20;
     }
-
-	if(!length || length == 0)
-	{
-		lengthEl.value = 15;
-	}
 });
 
 clipboard.addEventListener('click', () => {
@@ -41,11 +36,17 @@ clipboard.addEventListener('click', () => {
 });
 
 generate.addEventListener('click', () => {
-    const length = lengthEl.value;
+    let length = lengthEl.value;
 	const hasLower = lowercaseEl.checked;
 	const hasUpper = uppercaseEl.checked;
 	const hasNumber = numbersEl.checked;
 	const hasSymbol = symbolsEl.checked;
+
+	if(!length || length == 0)
+	{
+		lengthEl.value = 15;
+		length = 15;
+	}
 	
 	resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
